@@ -1,0 +1,14 @@
+<header>
+    <h1>Personajes Howarts</h1>
+</header>
+<main>
+    <div class="card-grid">
+    <% @characters.each do |character| %>
+        <div class="card">
+        <h2><%= character.name %></h2>
+        <p>Ubicación: <%= character.location %></p>
+        <p>Casa: <%= character.house %></p>
+        </div>
+    <% end %>
+    </div>
+</main>
